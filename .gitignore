@@ -22,7 +22,7 @@ classes/
 
 # Fabric
 run/
-config/
+/config/
 
 # macOS
 .DS_Store
