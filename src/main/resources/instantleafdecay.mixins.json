@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.instantleafdecay.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LeavesBlockMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

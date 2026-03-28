@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "instantleafdecay",
+  "version": "${version}",
+  "name": "Instant Leaf Decay",
+  "description": "Makes leaves decay instantly when no longer connected to a log block",
+  "authors": [
+    "InstantLeafDecay"
+  ],
+  "contact": {
+    "homepage": "https://github.com/example/instant-leaf-decay",
+    "sources": "https://github.com/example/instant-leaf-decay"
+  },
+  "license": "MIT",
+  "icon": "assets/instantleafdecay/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.instantleafdecay.InstantLeafDecay"
+    ]
+  },
+  "mixins": [
+    "instantleafdecay.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}

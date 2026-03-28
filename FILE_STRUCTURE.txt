@@ -1,0 +1,66 @@
+Complete File Structure for Instant Leaf Decay Mod
+==================================================
+
+Root Directory Files:
+├── build.gradle                                    # Gradle build configuration
+├── gradle.properties                               # Project properties and versions
+├── settings.gradle                                 # Gradle settings
+├── LICENSE                                         # MIT License
+├── README.md                                       # Documentation
+├── .gitignore                                      # Git ignore rules
+├── IMPLEMENTATION_EXPLANATION.md                   # Technical explanation
+└── FILE_STRUCTURE.txt                              # This file
+
+Source Code:
+└── src/main/
+    ├── java/com/instantleafdecay/
+    │   ├── InstantLeafDecay.java                   # Main mod initialization class
+    │   ├── config/
+    │   │   └── ModConfig.java                      # Configuration handler (JSON-based)
+    │   └── mixin/
+    │       └── LeavesBlockMixin.java               # Mixin to override leaf decay logic
+    └── resources/
+        ├── fabric.mod.json                         # Fabric mod metadata
+        ├── instantleafdecay.mixins.json            # Mixin configuration
+        └── assets/instantleafdecay/
+            └── icon.png                            # Mod icon (placeholder)
+
+Configuration (Generated at Runtime):
+└── config/
+    └── instantleafdecay.json                       # User configuration file
+                                                    # {
+                                                    #   "enabled": true,
+                                                    #   "instant": true
+                                                    # }
+
+Build Output (After running ./gradlew build):
+└── build/libs/
+    └── instant-leaf-decay-1.0.0.jar                # Compiled mod JAR
+
+Full File Paths:
+================
+
+Core Build Files:
+- ./build.gradle
+- ./gradle.properties
+- ./settings.gradle
+
+Source Files (Java):
+- ./src/main/java/com/instantleafdecay/InstantLeafDecay.java
+- ./src/main/java/com/instantleafdecay/config/ModConfig.java
+- ./src/main/java/com/instantleafdecay/mixin/LeavesBlockMixin.java
+
+Resource Files (JSON/Assets):
+- ./src/main/resources/fabric.mod.json
+- ./src/main/resources/instantleafdecay.mixins.json
+- ./src/main/resources/assets/instantleafdecay/icon.png
+
+Documentation:
+- ./LICENSE
+- ./README.md
+- ./IMPLEMENTATION_EXPLANATION.md
+- ./FILE_STRUCTURE.txt
+- ./.gitignore
+
+Runtime Generated:
+- ./config/instantleafdecay.json (created on first run)
